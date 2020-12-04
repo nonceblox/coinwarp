@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- Font-icon css-->
+    <link rel="stylesheet" type="text/css" href="font-awesome.min.css">
+    <title>Gibraltar Stock Exchange</title>   
+  </head>
+  <body class="sidebar-mini fixed  pace-done sidebar-collapse">
+    <div class="wrapper">
+      <!-- Navbar-->
+      <header class="main-header hidden-print" style="box-shadow: 0px 0px 10px rgba(100,100,100, .2)">
+        <div style="padding: 10px;background-color: #fff" class="mobss"></div>
+        <a class="logo" style="background-color: #fff" href="index.html"><img src="img/gibral_logo12.jpg" style="width: 140px;margin-top:-15px;"></a>
+        <div style="padding: 10px;background-color: #fff;border-bottom: solid 1px #eee" class="mobss"></div>
+        <nav class="navbar navbar-static-top nava" style="background-color: #fff;">
+          <!-- Sidebar toggle button--><a class="sidebar-toggle" href="#" data-toggle="offcanvas" style="color: #ccc"></a>
+          <!-- Navbar Right Menu-->
+          <div class="navbar-custom-menu">
+            <ul class="top-nav">
+              <!--Notification Menu-->
+              <li class="dropdown notification-menu"><a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">Notification <i class="fa fa-bell-o fa-lg"></i><span class="label label-danger" style="position: absolute;top:10px;">8</span></a>
+                <ul class="dropdown-menu">
+                 
+                  <li><a style="padding: 20px;" class="media" href="javascript:;"><span class="media-left media-icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-primary" style="color: #ccc" ></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></span>
+                      <div class="media-body"><span class="block">Lisa sent you a mail</span><span class="text-muted block">2min ago</span></div></a></li>
+                  <li><a  style="padding: 20px;" class="media" href="javascript:;"><span class="media-left media-icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-danger" style="color: #ccc"></i><i class="fa fa-hdd-o fa-stack-1x fa-inverse"></i></span></span>
+                      <div class="media-body"><span class="block">Server Not Working</span><span class="text-muted block">2min ago</span></div></a></li>
+                  <li><a  style="padding: 20px;" class="media" href="javascript:;"><span class="media-left media-icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-default" style="color: #ccc"></i><i class="fa fa-money fa-stack-1x fa-inverse"></i></span></span>
+                      <div class="media-body"><span class="block">Transaction xyz complete</span><span class="text-muted block">2min ago</span></div></a></li>
+                  <li class="not-footer"><a href="#">See all notifications.</a></li>
+                </ul>
+              </li>
+              <!-- User Menu-->
+
+
+              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profile &nbsp;&nbsp;<i class="fa  fa-user fa-lg"></i></a>
+                <ul class="dropdown-menu settings-menu">
+                  <li><a  data-toggle="modal" data-target="#myModal"><i class="fa fa-user fa-lg"></i>  Profile</a></li>
+                  <li><a href="index6.html"><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
+                </ul>
+              </li>
+
+
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!-- Side-Nav-->
+      <aside class="main-sidebar hidden-print">
+        <section class="sidebar">
+          <div class="user-panel">
+             <div style="padding: 20px;" class="mobss"></div>
+            <div class="pull-left image"><img class="img-circle" src="img/48.jpg" alt="User Image"></div>
+            <div class="pull-left info">
+              <p>Vinshu Gupta</p>
+              <p class="designation" style="opacity: .4">Frontend Developer</p>
+            </div>
+          </div>
+          <!-- Sidebar Menu-->
+          <ul class="sidebar-menu">
+            <li class="active"><a href="index.html"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>
+            <li class="treeview"><a href="reporting.html"><i class="fa fa-laptop"></i><span>Trasaction Reporting</span></a></li>           
+          </ul>
+        </section>
+      </aside>
+      <div class="content-wrapper">
+        <div class="page-title" style="padding: 32px">
+          <div class="row" style="width: 100%;margin-left:0px">
+           <div class="col-sm-3 lft">
+            <div style="padding: 20px;" class="mobss"></div>
+              <div class="lft_pad">
+                <h1 style="font-family: 'Century Gothic';color: #999;font-size: 30px;font-weight: normal;">Token Sale</h1>
+                
+              </div>
+           </div>
+           <div class="col-sm-6"></div>
+           <div class="col-sm-3 rgt">
+              <div class="rgt_pad">
+                   <div style="font-size: 40px;color: #999"><span style="color: #900;font-size: 20px;">$</span>033.90<span style="font-size: 18px;"> Price/GBX</span> <div style="font-size: 18px;color: #004a8f">~approximate </div></div>
+              </div>
+           </div>
+          </div>
+        </div>
+
+        <div style="padding: 20px;"></div>
+
+          <div class="clearfix"></div>
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-sm-12 ">
+
+            <div class="card vy">
+              <h3 class="card-title" style="font-family: 'Century Gothic'">Basic Information</h3>
+              <hr/>
+              <div class="card-body">
+                <form>
+                  <div class="form-group">
+                    <label class="control-label">Name</label>
+                    <input class="form-control" style="border-radius: 0px;border:solid 1px #ddd;" type="text" placeholder="Enter full name">
+                  </div>
+
+                   <div class="form-group">
+                    <label class="control-label">Last Name</label>
+                    <input class="form-control" style="border-radius: 0px;border:solid 1px #ddd;" type="text" placeholder="Enter Last name">
+                  </div>
+
+                  <div class="form-group">
+                    <label class="control-label">Email</label>
+                    <input class="form-control" style="border-radius: 0px;border:solid 1px #ddd;"  type="email" placeholder="Enter email address">
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Enter Phone no. (Optional)</label>
+                    <input class="form-control" style="border-radius: 0px;border:solid 1px #ddd;"  type="email" placeholder="Enter Phone no. address">
+                  </div>
+              
+                  <div class="form-group">
+                    <label class="control-label">Identity Proof</label>
+                    <input class="form-control" 
+                    <input class="form-control"  type="file">
+                  </div>
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox">I accept the terms and conditions
+                      </label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="card-footer">
+                <a class="btn btn-primary pull-right" style="background-color: #900" href="index2.html">Proceed</a>
+              </div>
+              <div class="clearfix"></div>
+              <div style="padding: 20px;"></div>
+             
+               
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-4 col-lg-2 ">
+            <div class="card vy" style="background-color: #121c3d">
+              <h3 class="card-title" style="font-family: 'Century Gothic';color:#fff;">Why Choose GBX</h3>
+                <hr/>
+
+                <div style="padding: 20px;border-bottom:solid 1px #900;text-align: center;">
+                  <img src="img/coins.svg" style="width: 50px;opacity: .3;">
+                  <div style="padding: 10px;text-align: center;color: #fff;font-family: 'Century Gothic';font-size: 15px;">Affordable </div>
+                </div>
+
+                <div style="padding: 20px;border-bottom:solid 1px #900;text-align: center;">
+                  <img src="img/money.svg" style="width: 50px;opacity: .3;">
+                  <div style="padding: 10px;text-align: center;color: #fff;font-family: 'Century Gothic';font-size: 15px;">Transparent </div>
+                </div>
+
+                <div style="padding: 20px;border-bottom:solid 1px #900;text-align: center;">
+                  <img src="img/wallet.svg" style="width: 50px;opacity: .3;">
+                  <div style="padding: 10px;text-align: center;color: #fff;font-family: 'Century Gothic';font-size: 15px;">Logical </div>
+                </div>
+
+                <div style="padding: 20px;text-align: center;">
+                  <img src="img/funds.svg" style="width: 50px;opacity: .3;">
+                  <div style="padding: 10px;text-align: center;color: #fff;font-family: 'Century Gothic';font-size: 15px;">Fast </div>
+                </div>
+            </div>
+          </div>
+      	<div class="col-sm-8 col-md-8 col-lg-4 ">
+      		<div class="card vy">
+      		 <h3 class="card-title" style="font-family: 'Century Gothic'">Frequently Asked Question</h3>
+              	<hr/>
+      		<div class="panel-group" id="accordion">
+      		  <div class="panel panel-default">
+      		    <div class="panel-heading" style="background-color:#121c3d;color:#fff;">
+      		      <h4 class="panel-title">
+      		        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+      		        Is an ICO/ITO similar to an IPO?</a>
+      		      </h4>
+      		    </div>
+      		    <div id="collapse1" class="panel-collapse collapse in">
+      		      <div class="panel-body">The IPO refers to the “Initial Public Offering”, the very first sales of stock issued by a company to the public where a company sells at least part of their shares to the public to be traded on a stock exchange.
+
+      			IPO’s are mainly used (not exclusively) to publicly offer a company’s equity in the form of shares, whereas ITO’s can be utilized to offer multi-purpose products, which are not limited to shares. These new products are represented through tokens or the digital assets in general.</div>
+      		    </div>
+      		  </div>
+      		  <div class="panel panel-default">
+      		    <div class="panel-heading" style="background-color:#900;color:#fff;">
+      		      <h4 class="panel-title">
+      		        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+      		        Is This  Exchange legal?</a>
+      		      </h4>
+      		    </div>
+      		    <div id="collapse2" class="panel-collapse collapse">
+      		      <div class="panel-body">GBX is working closely with regulators towards offering legal ITOs and in order to support the best benefits of its clients.
+
+      You can find more about GBX licenses and future regulatory expansion plans on this webpages and via GBX News.
+
+      </div>
+      		    </div>
+      		  </div>
+      		  <div class="panel panel-default">
+      		    <div class="panel-heading" style="background-color:#900;color:#fff;">
+      		      <h4 class="panel-title">
+      		        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+      		        Is there any minimum in my investment?</a>
+      		      </h4>
+      		    </div>
+      		    <div id="collapse2" class="panel-collapse collapse">
+      		      <div class="panel-body">Trading is subject to the contract specifications of each asset listed on GBX Exchange. An ICO/ITO may have a minimum investment amount.</div>
+      		    </div>
+      		  </div>
+      		  
+      		  <div class="panel panel-default">
+      		    <div class="panel-heading" style="background-color:#900;color:#fff;">
+      		      <h4 class="panel-title">
+      		        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+      		        Who is the owner of the token?</a>
+      		      </h4>
+      		    </div>
+      		    <div id="collapse2" class="panel-collapse collapse">
+      		      <div class="panel-body">As soon as you purchase a financial asset on GBX Exchange, it’ll be transferred into your personal GBX Wallet.
+      The delivery or the distribution of any rewards or other benefits of a token is subject to the terms and conditions of each financial asset.</div>
+      		    </div>
+      		  </div>
+      		  
+      		  <div class="panel panel-default">
+      		    <div class="panel-heading" style="background-color:#121c3d;color:#fff;">
+      		      <h4 class="panel-title">
+      		        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+      		        How can you invest in a token?</a>
+      		      </h4>
+      		    </div>
+      		    <div id="collapse3" class="panel-collapse collapse">
+      		      <div class="panel-body">Coins and Tokens are listed on GBX Exchange and you can have access to all of those financial products through the mobile app.
+      			Special releases will take place for each new financial product offered by GBXor on GBXExchange.</div>
+      		    </div>
+      		  </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading" style="background-color:#121c3d;color:#fff;">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                  Who can have an ICO/ITO?</a>
+                </h4>
+              </div>
+              <div id="collapse3" class="panel-collapse collapse">
+                <div class="panel-body">Anyone with an amazing idea.</div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading" style="background-color:#121c3d;color:#fff;">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                  Are there any risks involved?</a>
+                </h4>
+              </div>
+              <div id="collapse3" class="panel-collapse collapse">
+                <div class="panel-body">GBX  minimizes risks due to its strict adherence to regulatory and operational standards. Nevertheless, investing in financial products always entails a non-negligible level of risk.</div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading" style="background-color:#121c3d;color:#fff;">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                  How can you invest in a token?</a>
+                </h4>
+              </div>
+              <div id="collapse3" class="panel-collapse collapse">
+                <div class="panel-body">Coins and Tokens are listed on GBX Exchange and you can have access to all of those financial products through the mobile app.
+            Special releases will take place for each new financial product offered by GBX or on GBXExchange.</div>
+              </div>
+            </div>
+      		</div>
+      		
+      		</div>
+      	</div>
+        </div>
+        
+        <div style="padding-left:30px;">
+	   <div class="row">
+	        <div class="col-lg-12 col-md-12 col-sm-12" style="padding: 0px;">
+	          <div style="font-size: 12px;text-align:left" class="resp">Copyright © 2017-2017, All Rights Reserved.<a href="">Powered By Blockchain Worx</a></div>
+	        </div>
+       	    </div>
+        </div>
+        
+      </div>
+    </div>
+    <!-- Javascripts-->
+
+
+     <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog" >
+
+        <!-- Modal content-->
+        <div class="modal-content"  style="border-radius: 0px;">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title" style="font-family: 'Century Gothic'">Update Your Profile</h4>
+          </div>
+          <div class="modal-body">
+           <div style="padding: 30px;">
+             <form>
+                  <div class="form-group">
+                    <label class="control-label">Name</label>
+                    <input class="form-control" style="border-radius: 0px;border:solid 1px #ddd;" type="text" placeholder="Enter full name">
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Email</label>
+                    <input class="form-control" style="border-radius: 0px;border:solid 1px #ddd;"  type="email" placeholder="Enter email address">
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Enter Phone no. (Optional)</label>
+                    <input class="form-control" style="border-radius: 0px;border:solid 1px #ddd;"  type="email" placeholder="Enter Phone no. address">
+                  </div>
+                 <!--  <div class="form-group">
+                    <label class="control-label">Enter Phone no.</label>
+                    <textarea class="form-control" rows="4" placeholder="Enter your phnoe no."></textarea>
+                  </div> -->
+                  <div class="form-group">
+                    <label class="control-label">Gender</label>
+                    <div class="radio">
+                      <label>
+                        <input type="radio"  name="gender">Male
+                      </label>
+                       <label>
+                        <input type="radio" name="gender">Female
+                      </label>
+                    </div>
+                    <div class="radio">
+                     
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Identity Proof</label>
+                    <input class="form-control" 
+                    <input class="form-control"  type="file">
+                  </div>
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox">I accept the terms and conditions
+                      </label>
+                    </div>
+                  </div>
+                </form>
+           </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/pace.min.js"></script>
+    <script src="match.js" type="text/javascript"></script>    
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+      $(function() {
+          $('.vy').matchHeight({
+    byRow: true,
+    property: 'height',
+    target: null,
+    remove: false
+});
+        });
+    </script>
+  </body>
+</html>

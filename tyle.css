@@ -1,0 +1,27 @@
+.century{
+	font-family: 'Didact Gothic';
+}
+
+.inputs{
+	height:  45px;
+	border:0px;
+	border-radius: 0px;
+	border:solid 1px #eee;
+	/*box-shadow: 0px 0px 10px #ccc;*/
+}
+
+.inputss{
+	background-color: #757577;
+	color: #fff;
+	padding: 10px 20px;
+	transition: all .3s ease-in-out 0s;
+	border:solid 1px #eee;
+}
+
+.inputss:hover{
+	background-color: #777;
+	color: #fff;
+	padding: 10px 20px;
+	transition: all .3s ease-in-out 0s;
+	border:0px;
+}

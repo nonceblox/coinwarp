@@ -41,7 +41,7 @@
                 <?php see_status2($_REQUEST); ?>
               
                 <div class="row">
-                  <div class="col-sm-12" style="text-align: right;"><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#supportModal" >New Support Request</button> </div>
+                  <div class="col-sm-12" style="text-align: right;"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#supportModal" >New Support Request</button> </div>
                 </div><div style="padding: 10px;"></div>
 
                 <div class="row">
@@ -137,7 +137,7 @@
                    </div>
                    <div style="padding:5px;"></div>
 
-                   <button class="btn btn-danger" style="width: 100%">Submit Support Request</button>
+                   <button class="btn btn-primary" style="width: 100%">Submit Support Request</button>
                  </form>
                </center>
               </div>

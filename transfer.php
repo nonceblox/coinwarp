@@ -82,11 +82,15 @@
                                 //print_r($response);
                                 $i=1;
                                 foreach ($response['data'] as $key => $value) {
+                                    $times = time_elapsed_string($value['timestamp']/1000);
+
                                     if($value['event']=="Deposit Tokens"){
                                         $statys = '<label class="label label-info" style="color:#fff">'.$value['event'].'</label>';
                                     }else if($value['event']=="Withdraw Tokens"){
                                         $statys = '<label class="label label-success" style="color:#fff">'.$value['event'].'</label>';
                                     }else{
+                                        $times = time_elapsed_string($value['timestamp']/1000000000);
+                                        //echo $
                                         $statys = '<label class="label label-danger" style="color:#fff">'.$value['event'].'</label>';
                                     }
                                     
@@ -94,7 +98,7 @@
                                     $tx = "";
                                     $to_froms = "";
                                     if ($value['event']=="Deposit Tokens") {
-                                        $amount = $value['tokenAmount'];
+                                        $amount = $value['amount'];
                                         $to_froms = 'To : '.$pdo_auth['tx_address'].'<br/> From : Administrator <br/><label class="label label-success">Tx  Id : '.$value['transactionId'].'</label>';
                                     }
                                     else{
@@ -104,7 +108,7 @@
                                        
                                       echo ' <tr>
                                               <td>'.$i.'</td>
-                                              <td>'.$statys.' <br/> <span style="font-size:12px;color:#999">'.time_elapsed_string($value['timestamp']/1000).'</span></td>   
+                                              <td>'.$statys.' <br/> <span style="font-size:12px;color:#999">'.$times.'</span></td>   
                                                <td><label class="">'.round($amount,2).' '.token_names().'</label></td>
                                                <td>'.$to_froms.'</td>
                                               <td><label class="label label-info" style="color:#fff">'.$value['status'].'</label></td>                                                                                                         

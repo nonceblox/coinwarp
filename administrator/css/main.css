@@ -13702,7 +13702,7 @@ be a descendant of the grid when it is being dragged.
 .sidebar-menu > li:hover > a,
 .sidebar-menu > li.active > a {
   color: #fff;
-  background: #a51a20;
+  background: #006a9e;
     border-color: #fff
 }
 

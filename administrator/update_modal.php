@@ -24,10 +24,10 @@
                     <input class="form-control" style="border-radius: 0px;border:solid 1px #161d5d;background-color: #090d35;color: #888"  type="text" name="tx_address" value="<?php echo $pdo_auth['tx_address']; ?>"  placeholder="Transaction Address">
                   </div>
 
-                 <!--  <div class="form-group">
-                    <label class="control-label">Enter Password</label>
-                    <input class="form-control" style="border-radius: 0px;border:solid 1px #ddd;" name="password"  value="<?php echo md5($pdo_auth['password']); ?>" type="text" placeholder="Password">
-                  </div> -->
+                  <div class="form-group">
+                    <label class="control-label" style="color:#fff;">Enter Password</label>
+                    <input class="form-control" style="border-radius: 0px;border:solid 1px #161d5d;background-color: #090d35;color: #888" name="password"  value="<?php echo $pdo_auth['password']; ?>" type="password" placeholder="Password">
+                  </div>
 
                 
                   <br/><br/>

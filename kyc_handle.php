@@ -55,7 +55,7 @@
               add_notification_user("A kyc Request Initiated", "user", $pdo_auth['id']);
               add_notification("A kyc is Requested from User", "admin");
 
-               header('Location:kyc.php?choice=success&value=kyc Requested, we will get back to you shortly');
+               header('Location:kyc.php?choice=success&value=KYC was sent. We will get back to you shortly');
               
                exit();
         } else {

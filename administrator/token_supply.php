@@ -10,6 +10,12 @@
      exit();
    }
 
+
+   $table = "entrc_price";
+   $result = $pdo->exec("UPDATE $table SET `price`='".$_REQUEST['price']."'");
+   //echo "UPDATE $table SET `price`='".$_REQUEST['price']."'";
+
+
    $curl = curl_init();
 
     curl_setopt_array($curl, array(
@@ -31,7 +37,7 @@
     $response = json_decode($response, true);
     curl_close($curl);
     if ($response['success']=="true") {
-       add_notification("Admin Account Profile Updated", "admin");
+       add_notification("Admin changed price settings ", "admin");
         header('Location:price_updates.php?choice=success&value=Total Supply has been changed ');
         exit();
     }else{

@@ -100,19 +100,19 @@
                          <center> <img src="profile/<?php echo $pdo_auth['file']; ?>" style="width: 150px;;border-radius: 50%;filter:grayscale(1);">
 
                          <div style="padding:7px;"></div>
-                          <div class="century" style="font-weight: bold;font-size: 24px;color: #ea1922;text-transform: uppercase;"><?php echo $pdo_auth['name']; ?></div>
+                          <div class="century" style="font-weight: bold;font-size: 24px;color: #333;text-transform: uppercase;"><?php echo $pdo_auth['name']; ?></div>
                           <div><?php echo wallet_names(); ?> Wallet Holder</div>
                           
                           <hr style="width: 60%;opacity: .1" />
-                           <a href="" class="btn btn-primary btn-sm btn-warning" data-toggle="modal" data-target="#myModal" data-step="3" data-intro="You can Update Profile Here" data-position='right' >Update Profile</a>
-                          <a href="change_photo.php"><button class="btn btn-sm btn-danger"  data-step="1" data-intro="Here You can Change Your Profile Photo " >Update Photo</button></a>
+                           <a href="" class="btn btn-primary btn-sm btn-info" data-toggle="modal" data-target="#myModal" data-step="3" data-intro="You can Update Profile Here" data-position='right'  >Update Profile</a>
+                          <a href="change_photo.php"><button class="btn btn-sm btn-primary"  data-step="1" data-intro="Here You can Change Your Profile Photo " >Update Photo</button></a>
 
                          
                           <div style="padding:3px;"></div>
                           <div style="font-size:12px;color: #444;">Last Visited on <?php echo date("D-m-y : H:i:s"); ?></div>
                           <hr style="opacity: .1" />
                            
-                          <b class="century" style="color: #ea1922">Account Address : </b>
+                          <b class="century" style="color: #333">Account Address : </b>
                           <div style="color: #999;word-wrap:break-word;width:170px"><?php echo $pdo_auth['tx_address']; ?></div>
                           <div style="padding:8px;"></div>                            
                         </div>
@@ -127,7 +127,7 @@
                   			  <div class="panel panel-default">
                   			    <div class="panel-heading" style="padding:10px;border:solid 1px #eee;">
                   			      <h4 class="panel-title" style="font-size:18px">
-                  			        <a data-toggle="collapse" data-parent="#accordion" style="color:#ea1922" href="#collapse1">
+                  			        <a data-toggle="collapse" data-parent="#accordion" style="color:#333" href="#collapse1">
                   			        Question 1 : What do I need to create a Blockchain Wallet?</a>
                   			      </h4>
                   			    </div>
@@ -138,7 +138,7 @@
                   			  <div class="panel panel-default">
                   			    <div class="panel-heading" style="padding:10px;border:solid 1px #eee;">
                   			      <h4 class="panel-title" style="font-size:18px">
-                  			        <a data-toggle="collapse" data-parent="#accordion" style="color:#ea1922" href="#collapse2">
+                  			        <a data-toggle="collapse" data-parent="#accordion" style="color:#333" href="#collapse2">
                   			         Question2 : What is an address?</a>
                   			      </h4>
                   			    </div>
@@ -150,7 +150,7 @@
                   			  <div class="panel panel-default">
                   			    <div class="panel-heading" style="padding:10px;border:solid 1px #eee;">
                   			      <h4 class="panel-title" style="font-size:18px">
-                  			        <a data-toggle="collapse" data-parent="#accordion" style="color:#ea1922" href="#collapse4">
+                  			        <a data-toggle="collapse" data-parent="#accordion" style="color:#333" href="#collapse4">
                   			         Question3 : Are there fees?</a>
                   			      </h4>
                   			    </div>
@@ -163,7 +163,7 @@
                   			  <div class="panel panel-default">
                   			    <div class="panel-heading" style="padding:10px;border:solid 1px #eee;">
                   			      <h4 class="panel-title" style="font-size:18px" >
-                  			        <a data-toggle="collapse" data-parent="#accordion" style="color:#ea1922" href="#collapse3">
+                  			        <a data-toggle="collapse" data-parent="#accordion" style="color:#333" href="#collapse3">
                   			         Question 4:   What happens if my transaction is not completed?</a>
                   			      </h4>
                   			    </div>
@@ -175,7 +175,7 @@
                            <div class="panel panel-default">
                             <div class="panel-heading" style="padding:10px;border:solid 1px #eee;">
                               <h4 class="panel-title" style="font-size:18px" >
-                                <a data-toggle="collapse" data-parent="#accordion" style="color:#ea1922" href="#collapse6">
+                                <a data-toggle="collapse" data-parent="#accordion" style="color:#333" href="#collapse6">
                                  How can I keep my wallet secure?</a>
                               </h4>
                             </div>
@@ -207,40 +207,29 @@
                       <th>Wallet Address</th>
                       <th>File </th>
                       <th>Balance</th>
-                      <th>Status</th>
                     </tr>
                   </thead>
                   <tbody>
                     <?php 
                      
                       try {
-                          $stmt = $pdo->prepare('SELECT * FROM `users` ORDER BY date DESC');
+                          $stmt = $pdo->prepare('SELECT * FROM `users` WHERE `email`="'.$pdo_auth['email'].'" ORDER BY date DESC');
                       } catch(PDOException $ex) {
                           echo "An Error occured!"; 
                           print_r($ex->getMessage());
                       }
                       $stmt->execute();
-                      $user = $stmt->fetchAll();
+                      $user = $stmt->fetch();
+                      $value = $user;
                       $i=1;
-                      foreach ($user as $key => $value) {
-
-                         $nums = count_items("kyc", "user_id", $value['id']);
-                         $statys = '<button style="background-color:#f00" class="btn btn-danger btn-sm">Unverified</button>';
-                            if($nums>0){
-                            $statys = '<button class="btn btn-success btn-sm">Verified</button>';
-                          }
-
-                        echo ' <tr>
+                      echo ' <tr>
                                 <td>'.$i.'</td>
                                 <td><b>'.$value['name'].'</b></td>
                                 <td>'.$value['email'].'</td>
                                  <td>'.$value['tx_address'].'</td>
-                                 <td><img src="../profile/'.$value['file'].'" style="width:30px;" /></td>
+                                 <td><img src="profile/'.$value['file'].'" style="width:30px;" /></td>
                                  <td>'.getWalletBalance($value['tx_address'])." ".token_names().'</td>
-                                <td>'.$statys.'</td>
                               </tr>';
-                              $i++;
-                      }
                      ?>
                     
                   </tbody>

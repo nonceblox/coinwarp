@@ -50,7 +50,7 @@
                   <thead>
                     <tr style="color:#ddd">
                       <th>#</th>
-                      <th> Name</th>
+                      <th>Name</th>
                       <th>Email</th>
                       <th>Wallet Address</th>
                       <th>File </th>

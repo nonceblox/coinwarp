@@ -14,7 +14,7 @@
                 </li>
 
                 <li class="has_sub">
-                    <a target="_blank" href="Whitepaper_OBORTECH_11_2020.pdf" class="waves-effect"><i class="zmdi zmdi-home"></i><span> White Paper </span> </a>
+                    <a target="_blank" href="#.pdf" class="waves-effect"><i class="zmdi zmdi-home"></i><span> White Paper </span> </a>
                 </li>
 
                 <li class="has_sub">
@@ -32,17 +32,17 @@
                         <span class="menu-arrow"></span></a>
                     <ul class="list-unstyled">
                         <li><a href="sell.php">Send Tokens</a></li>
-                        <li><a href="sent_tokens.php">View All Sent Tokens</a></li>
+                        <li><a href="sent_tokens.php">View all sent Tokens</a></li>
                     </ul>
                 </li>
 
                   <li class="has_sub">
                     <a href="javascript:void(0);" class="waves-effect"><i class="zmdi zmdi-album"></i>
-                        <span> withdraw/sell  Tokens  </span>
+                        <span> Withdraw/Sell Tokens  </span>
                         <span class="menu-arrow"></span></a>
                     <ul class="list-unstyled">                       
-                        <li><a href="withdraw_tokens.php">withdraw/sell Tokens</a></li>
-                        <li><a href="view_withdraw.php">View all withdraw/sell </a></li>
+                        <li><a href="withdraw_tokens.php">Withdraw/Sell Tokens</a></li>
+                        <li><a href="view_withdraw.php">View all Withdraw/Sell </a></li>
                     </ul>
                 </li>
               

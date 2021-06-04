@@ -84,10 +84,10 @@
                  <thead>
                     <tr>
                       <th style="color:#fff;opacity: .4">S.No</th>
-                       <th style="color:#fff;opacity: .4">to</th>
-                      <th style="color:#fff;opacity: .4">from </th>
+                       <th style="color:#fff;opacity: .4">To</th>
+                      <th style="color:#fff;opacity: .4">From </th>
                       <th style="color:#fff;opacity: .4">Token</th>
-                      <th style="color:#fff;opacity: .4">date</th>
+                      <th style="color:#fff;opacity: .4">Date</th>
                       <th style="color:#fff;opacity: .4">Status</th>
                     </tr>
                  </thead>

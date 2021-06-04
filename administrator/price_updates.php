@@ -45,22 +45,20 @@
                         <h2>Total Supply is : <?php echo $rada['data']['totalSupply']; ?> </h2>
                         <hr/>
                         <label class="control-label" style="font-size: 16px;">Increase Token Supply By</label>
-                        <input class="form-control"  style="border-radius: 0px;border:solid 1px #ddd;"  type="number" name="token_supply"  min="0"   placeholder="Enter Tokens">
-                      </div>
-
-                     <!--  <div class="form-group">
-                        <label class="control-label" style="font-size: 16px;">Enter Total Carbon Credits</label>
-                        <input class="form-control"  style="border-radius: 0px;border:solid 1px #ddd;"  type="number" name="carbon_credits_supply" value="<?php echo $pdo_auth['carbon_credits']; ?>" min="0"  placeholder="Enter Token Token Supply Amount">
+                        <input class="form-control"  style="border-radius: 0px;border:solid 1px #ddd;" value="0"  type="number" name="token_supply"  min="0"   placeholder="Enter Tokens">
                       </div>
 
                       <div class="form-group">
-                        <label class="control-label" style="font-size: 16px;">Enter Total Energy Units </label>
-                        <input class="form-control"  style="border-radius: 0px;border:solid 1px #ddd;"  type="number" name="energy_supply" value="<?php echo $pdo_auth['energy_units']; ?>" min="0"  placeholder="Enter Token Token Supply Amount">
-                      </div> -->
+                        <?php $prices = get_data_id_data("entrc_price", "id", 1); //print_r($prices); ?>
+                        <label class="control-label" style="font-size: 16px;">Price per token (USD)</label>
+                        <input class="form-control"  style="border-radius: 0px;border:solid 1px #ddd;" step=".0001" type="number" name="price" value="<?php echo $prices['price']; ?>" min="0"  placeholder="Price per token (USD)">
+                      </div>
+
+                     
                       
                     <hr/>
                     <div class="form-group">
-                        <input type="submit" class="btn btn-danger" name="update_admin" value="Update Token Supply">
+                        <input type="submit" class="btn btn-primary" name="update_admin" value="Update Token Supply">
 
                         <?php// echo extract_total("users", "balance"); ?>
                     </div> 

@@ -2,7 +2,7 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-sm-6">
-              <div class="century" style="font-size: 16px;padding-top: 10px;">You can Now Buy/Sell rUSD From <a target="_blank" href="http://r">Any Exchange You Need</a></div>              
+              <div class="century" style="font-size: 16px;padding-top: 10px;">You can Now Buy/Sell <?php echo token_names(); ?> From <a target="_blank" href="http://r">Any Exchange You Need</a></div>              
             </div>
 
             <div class="col-sm-6">
@@ -33,7 +33,7 @@
                   </div>
                   <?php 
                       if($count!=0){?>
-                      <div id="kiopl" style="background-color: red;padding: 1px 5px;right: 10px;position: absolute;color: #fff;font-size: 10px;border-radius: 4px;"><?php echo $count; ?></div>
+                      <div id="kiopl" style="background-color: #ff6600;padding: 1px 5px;right: 10px;position: absolute;color: #fff;font-size: 10px;border-radius: 4px;"><?php echo $count; ?></div>
                       <?php } ?>
                   
                 </div>

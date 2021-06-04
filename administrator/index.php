@@ -18,6 +18,7 @@
     script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
     script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
     -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
   </head>
   <?php $rand = mt_rand(1,4); ?>
   <body style="background-image: url('../img/poi34.jpg');background-size: cover;">
@@ -39,7 +40,7 @@
           </div>
           <div style="padding:10px;"></div>
           <div class="form-group btn-container">
-            <button class="btn btn-primary btn-block" style="background-color: #f44336"><i class="fa fa-sign-in fa-lg fa-fw"></i>SIGN IN</button>
+            <button class="btn btn-primary btn-block" style="background-color: #00ccff"><i class="fa fa-sign-in fa-lg fa-fw"></i>SIGN IN</button>
           </div>
         </form>
         <form class="forget-form" action="index.html">
@@ -49,7 +50,7 @@
             <input class="form-control" type="text" placeholder="Email">
           </div>
           <div class="form-group btn-container">
-            <button class="btn btn-primary btn-block" style="background-color: #f44336"><i class="fa fa-unlock fa-lg fa-fw"></i>RESET</button>
+            <button class="btn btn-primary btn-block" style="background-color: #00ccff"><i class="fa fa-unlock fa-lg fa-fw"></i>RESET</button>
           </div>
           <div class="form-group mt-20">
             <p class="semibold-text mb-0"><a data-toggle="flip" style="color: #999"><i class="fa fa-angle-left fa-fw"></i> Back to Login</a></p>

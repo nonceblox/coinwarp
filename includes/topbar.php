@@ -4,11 +4,11 @@
     <!-- LOGO -->
     <div class="topbar-left">
         <a href="dashboard.php" class="logo" id="logo-tour">
-            <img src="fac.png" style="width: 30px;"><span style="color:red">OBORTECH</span></a>
+            <img src="fac.png" style="width: 30px;"><span style="color:#060661">COINWARP</span></a>
     </div>
 
 
-    <nav class="navbar navbar-custom" style="background-color: #ea1922">
+    <nav class="navbar navbar-custom" style="background-color: #274de2">
         <ul class="nav navbar-nav">
             <li class="nav-item">
                 <button class="button-menu-mobile open-left waves-light waves-effect">

@@ -114,7 +114,7 @@
         <div style="padding: 20px;text-align: center;position: relative;z-index: 10">
            <form method="POST" action="login_redirect.php"  novalidate onsubmit="return validate();">
              <div style="padding: 10px;background-color: #fff">
-                 <img src="OBORTECH logo_H_clean.svg" style="width:180px;">
+                 <img src="logo.png" style="width:180px;">
                   <div style="padding: 5px;"></div>
                 <div style="padding: 10px;"></div>
 
@@ -145,7 +145,7 @@
 
                 <div class="row">
                   <div class="col-sm-12">
-                   <button class="inputss hvr-bounce-to-right" name="login" style="width: 100%;background-color: #ea1922">LogIn</button>
+                   <button class="inputss hvr-bounce-to-right" name="login" style="width: 100%;background-color: #0199ca">LogIn</button>
                   </div>
                 </div>
                 <br/>
@@ -169,7 +169,7 @@
           <div class="modal-content">
             <form method="POST" action="register_handle.php" novalidate onsubmit="return validate();">
              <div style="padding: 40px;background-color: #fff">
-                  <center><img src="OBORTECH logo_H_clean.svg" style="width:180px;"></center>
+                  <center><img src="logo.png" style="width:180px;"></center>
                   <div style="padding: 20px;"></div>
 
                     <div class="row">
@@ -197,7 +197,7 @@
 
                 <div class="row">
                   <div class="col-sm-12">
-                   <button class="inputss  hvr-bounce-to-right" style="width: 100%;background-color:#ea1922" type="submit" name="add_user">Register</button>
+                   <button class="inputss  hvr-bounce-to-right" style="width: 100%;background-color:#0199ca" type="submit" name="add_user">Register</button>
                   </div>
                 </div>
 
@@ -215,7 +215,7 @@
           <div class="modal-content">
             <form method="POST" action="login_redirect.php"  novalidate onsubmit="return validate();">
              <div style="padding: 40px;background-color: #fff">
-                 <img src="OBORTECH logo_H_clean.svg" style="width:180px;">
+                 <img src="logo.png" style="width:180px;">
                 <div style="padding: 5px;"></div>
                 <div style="padding: 10px;"></div>
 
